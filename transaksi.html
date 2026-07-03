@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transaksi - UNIQLO Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<img src="image.png" alt="Logo UNIQLO" width="70">
+<h1>UNIQLO STORE</h1>
+</div>
+
+</header>
+
+<div class="container">
+
+<h2>Form Transaksi Pembelian</h2>
+
+<form id="formTransaksi">
+
+<label>Nama Pembeli</label>
+<input type="text" id="nama" placeholder="Masukkan nama pembeli">
+
+<label>Pilih Produk</label>
+<select id="produk">
+<option value="">-- Pilih Produk --</option>
+<option>AIRism T-Shirt</option>
+<option>Oversize Hoodie</option>
+<option>Wide Pants</option>
+<option>Flannel Shirt</option>
+<option>Cargo Pants</option>
+</select>
+
+<label>Ukuran</label>
+<select id="ukuran">
+<option value="">-- Pilih Ukuran --</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+</select>
+
+<label>Jumlah</label>
+<input type="number" id="jumlah" placeholder="Jumlah pembelian">
+
+<label>Metode Pembayaran</label>
+<select id="bayar">
+<option value="">-- Pilih Pembayaran --</option>
+<option>QRIS</option>
+<option>Transfer Bank</option>
+<option>Debit</option>
+<option>Kartu Kredit</option>
+<option>Tunai</option>
+</select>
+
+<button type="submit">Simpan Transaksi</button>
+
+</form>
+
+<br>
+
+<h2>Daftar Transaksi</h2>
+
+<table>
+
+<tr>
+<th>Nama Pembeli</th>
+<th>Produk</th>
+<th>Ukuran</th>
+<th>Jumlah</th>
+<th>Pembayaran</th>
+</tr>
+
+<tr>
+<td>Andi</td>
+<td>AIRism T-Shirt</td>
+<td>M</td>
+<td>2</td>
+<td>QRIS</td>
+</tr>
+
+<tr>
+<td>Siti</td>
+<td>Oversize Hoodie</td>
+<td>L</td>
+<td>1</td>
+<td>Transfer Bank</td>
+</tr>
+
+<tr>
+<td>Budi</td>
+<td>Wide Pants</td>
+<td>XL</td>
+<td>3</td>
+<td>Debit</td>
+</tr>
+
+</table>
+
+</div>
+
+<footer>
+<p>&copy; 2026 UNIQLO Store Indonesia</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

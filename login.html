@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - UNIQLO Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<img src="image.png" alt="Logo UNIQLO" width="70">
+<h1>UNIQLO STORE</h1>
+</div>
+
+</header>
+
+<div class="container">
+
+<h2 style="text-align:center;">Login Member</h2>
+
+<p style="text-align:center;">
+Silakan login untuk melanjutkan transaksi pembelian produk UNIQLO.
+</p>
+
+<form id="formLogin">
+
+<label>Username</label>
+<input type="text" id="username" placeholder="Masukkan Username">
+
+<label>Password</label>
+<input type="password" id="password" placeholder="Masukkan Password">
+
+<button type="submit">Login</button>
+
+</form>
+
+<br>
+
+<p style="text-align:center;">
+Belum memiliki akun?
+<a href="#">Daftar Sekarang</a>
+</p>
+
+</div>
+
+<footer>
+<p>&copy; 2026 UNIQLO Store Indonesia</p>
+</footer>
+
+<script>
+
+document.getElementById("formLogin").addEventListener("submit", function(e){
+
+let username = document.getElementById("username").value;
+let password = document.getElementById("password").value;
+
+if(username=="" || password==""){
+
+alert("Username dan Password wajib diisi!");
+e.preventDefault();
+
+}else{
+
+alert("Login berhasil. Selamat datang di UNIQLO Store!");
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
